@@ -1,1 +1,3 @@
-import { gameBoard } from "./data";
+import { gameBoard } from './data'
+
+gameBoard()
