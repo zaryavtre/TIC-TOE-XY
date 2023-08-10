@@ -19,3 +19,9 @@ a {
   padding: 2em;
   height: 500px;
 }
+
+.heading-1 {
+  margin: 1em;
+  font-family: 'Zilla Slab', serif;
+  font-size: 2em;
+}

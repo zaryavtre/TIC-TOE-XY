@@ -1,3 +1,3 @@
-import { gameBoard } from './data.js'
+import { gameBoard } from './board.js'
 
 gameBoard()

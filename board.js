@@ -11,25 +11,29 @@ function mainGrid() {
 
   mainApp.appendChild(canvas)
 
-  for(let i = 0; i < 3 * 3; i++) {
+  for (let i = 0; i < 3 * 3; i++) {
     let increment = 0
     const gridElement = document.createElement('div')
     gridElement.style.border = 'solid 1px black'
-    gridElement.classList.add(`${increment += 1}`)
+    gridElement.style.backgroundColor = 'gray'
+    gridElement.style.cursor = 'pointer'
+    gridElement.classList.add(`${(increment += 1)}`)
     canvas.appendChild(gridElement)
   }
 }
 
-function gameBoard() {
-  mainGrid()
+function ticTacToeTitle() {
   const boardHeading = document.createElement('h1')
+  boardHeading.classList.add('heading-1')
   const heading = document.createTextNode('Welcome to Tic Tac Toe X')
   boardHeading.appendChild(heading)
   mainApp.appendChild(boardHeading)
-
 }
 
-
+function gameBoard() {
+  ticTacToeTitle()
+  mainGrid()
+}
 
 const playersFactory = (player1, player2) => {}
 
