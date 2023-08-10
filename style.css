@@ -18,6 +18,7 @@ a {
 .main {
   padding: 2em;
   height: 500px;
+  box-sizing: border-box;
 }
 
 .heading-1 {

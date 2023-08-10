@@ -11,13 +11,16 @@ function mainGrid() {
 
   mainApp.appendChild(canvas)
 
+  let increment = 1
+
   for (let i = 0; i < 3 * 3; i++) {
-    let increment = 0
     const gridElement = document.createElement('div')
     gridElement.style.border = 'solid 1px black'
     gridElement.style.backgroundColor = 'gray'
     gridElement.style.cursor = 'pointer'
-    gridElement.classList.add(`${(increment += 1)}`)
+    gridElement.classList.add('grid-element')
+    gridElement.setAttribute('id', `${increment++}`)
+    gridElement.dataset.element = 'elementgrid'
     canvas.appendChild(gridElement)
   }
 }
