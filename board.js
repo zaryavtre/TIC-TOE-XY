@@ -18,6 +18,7 @@ function mainGrid() {
     gridElement.style.border = 'solid 1px black'
     gridElement.style.backgroundColor = 'gray'
     gridElement.style.cursor = 'pointer'
+    gridElement.style.padding = '0.5em'
     gridElement.classList.add('grid-element')
     gridElement.setAttribute('id', `${increment++}`)
     gridElement.dataset.element = 'elementgrid'
@@ -38,6 +39,7 @@ function gameBoard() {
   mainGrid()
 }
 
-const playersFactory = (player1, player2) => {}
+const playersFactory = (player1, player2) => {
+}
 
 export { gameBoard, playersFactory }
